@@ -2,9 +2,9 @@ import React from 'react';
 import {Link, Route} from "wouter";
 import './App.css';
 import logo from './logo.png';
-import ListOfGifs from './components/ListOfGifs';
 import Detail from './pages/Detail';
 import Home from './pages/Home';
+import SearchResults from './pages/SearchResults';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
 					component={Home}
 					path="/"/>
 				<Route
-					component={ListOfGifs}
+					component={SearchResults}
 					path="/search/:keyword"/>
 				<Route
 				component={Detail}
